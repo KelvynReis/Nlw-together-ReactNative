@@ -6,7 +6,7 @@ import {  Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdha
 import AppLoading from 'expo-app-loading';
 
 import { SignIn } from './src/Screens/SignIn';
-
+import { Background } from './src/components/Background';
 export default function App(){
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
@@ -20,13 +20,13 @@ export default function App(){
   }
 
   return(
-    <>
+    <Background>
       <StatusBar
                   barStyle="light-content"
                   backgroundColor="transparent"
                   translucent
               />
       <SignIn/>
-    </>
+    </Background>
   );
 }

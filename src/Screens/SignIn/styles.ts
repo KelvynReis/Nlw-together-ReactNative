@@ -7,7 +7,6 @@ export const styles = StyleSheet.create({
         flex: 1, //ocupar toda a tela
         justifyContent: 'center', // alinhar na vertical
         alignItems: 'center', //alinhar na horizontal
-        backgroundColor: theme.colors.secondary100 
     },
     image: {
         width: '100%',
