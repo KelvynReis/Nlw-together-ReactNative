@@ -5,6 +5,7 @@ import { CategorySelect } from '../../components/CategorySelect';
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { Profile } from '../../components/Profile';
 import { ListHeader } from '../../components/ListHeader';
+import { Background } from '../../components/Background';
 import { Appointment } from '../../components/Appointment';
 import { ListDivider } from '../../components/ListDivider';
 
@@ -44,7 +45,7 @@ export function Home(){
         categoryId === category ? setCategory('') : setCategory(categoryId);
     }
     return(
-        <View>
+        <Background>
             <View style={styles.header}>
                 <Profile />
                 <ButtonAdd />
@@ -71,6 +72,6 @@ export function Home(){
                         showsVerticalScrollIndicator={false}
                     />  
                 </View>
-        </View>
+        </Background>
     );
 }
